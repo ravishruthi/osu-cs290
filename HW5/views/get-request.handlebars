@@ -1,0 +1,20 @@
+<!--
+Referenced module 'Server-Side Form Handling' -> Form Processing -> GETs
+referenced code example on how to iterate through array in object (#/)
+-->
+<h1>GET Request Received</h1>
+<table class="param-table">
+  <thead>
+    <tr>
+      <th>Param Name
+      <th>Param Value
+  </thead>
+  <tbody>
+    {{#each paramList}}
+    <tr>
+      <td>{{this.key}}
+      <td>{{this.value}}
+    </tr>
+    {{/each}}
+  </tbody>
+</table>
