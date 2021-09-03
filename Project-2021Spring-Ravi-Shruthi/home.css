@@ -1,0 +1,77 @@
+.title {
+  color: #962D3E;
+  text-align: center;
+  font-size: 60px;
+}
+
+nav ul {
+  background-color: #962D3E;
+  overflow: hidden; /*makes sure that if it is greater than size, it will be hidden*/
+}
+nav li {
+  display: inline;
+}
+
+nav li a {
+  float: left;
+  text-decoration: none;
+  color: white;
+  text-align: center;
+  padding: 14px 14px 14px 14px;
+  font-size: 18px;
+}
+
+nav li a:hover {
+  background-color: #BF7373;
+  color: white;
+  text-decoration: none;
+}
+
+#warcamps .carousel-caption {
+  margin-bottom: 2.5%;
+  background-color: #343642;
+}
+
+#roshar .carousel-caption {
+  background-color: #343642;
+}
+
+#quiz .carousel-caption {
+  background-color: #343642;
+}
+
+.carousel-inner a {
+  color: white;
+  text-decoration: none;
+}
+
+.carousel-inner a:hover {
+  color: #F2EBC7;
+  text-decoration: none;
+}
+
+.carousel {
+  width: 100% !important;
+}
+
+.carousel-inner img {
+  width: 100% !important;
+  height: 100% !important;
+}
+
+.carousel-link {
+  color: white;
+  text-decoration: none;
+}
+
+.carousel-link:hover {
+  text-decoration: none;
+}
+
+.left, .right {
+  background: none !important;
+}
+
+.url {
+  font-size: 10px;
+}

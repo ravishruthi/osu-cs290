@@ -1,0 +1,88 @@
+.title {
+  color: #962D3E;
+  text-align: center;
+}
+
+.page-title {
+  color: #962D3E;
+  padding-top: 8px;
+  padding-left: 2%;
+  font-size: 50px;
+}
+
+nav ul {
+  background-color: #962D3E;
+  overflow: hidden;
+}
+nav li {
+  display: inline;
+}
+
+nav li a {
+  float: left;
+  text-decoration: none;
+  color: white;
+  text-align: center;
+  padding: 14px 14px 14px 14px;
+  font-size: 18px;
+}
+
+nav li a:hover {
+  background-color: #BF7373;
+  color: white;
+  text-decoration: none;
+}
+
+/*
+  Referenced: https://www.w3schools.com/howto/howto_js_hover_tabs.asp
+  Used this to create the side tab like content for this page, without hover feature.
+  Again, same explanation given in opinion.css
+*/
+.tab {
+  float: left;
+  margin-left: 8px;
+  border: 1px solid #D9D9D9;
+  background-color: #083439;
+  width: 25%;
+  height: 80vh;
+}
+
+.tab button {
+  display: block;
+  background-color: #083439;
+  color: white;
+  padding: 50px 50px 50px;
+  width: 100%;
+  border: none;
+  outline: none;
+  text-align: left;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+button:hover {
+  color: #083439;
+  background-color: #9BB8AD;
+}
+
+.tabcontent {
+  display: none;
+}
+
+
+#first, #second {
+  float: left;
+  padding-left: 15px;
+  padding-right: 2%;
+}
+
+#second {
+  margin-left: 25%;
+  position: absolute;
+}
+
+/*
+#result {
+  color: #D70D30;
+}
+*/

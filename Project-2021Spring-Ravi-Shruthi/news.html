@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>News</title>
+    <link rel="stylesheet" href="news.css" type="text/css">
+    <!--
+      Decided to incorporate bootstrap into every page MAINLY for the way it incorporated
+      a specific font for the title (what news, and subpage titles), the line divider look,
+      and other stylistic aspects. I did not use it to ease up criteria listed (I made sure to
+      use html/css/javascript explicitly for all of that), EXCEPT for carousel on home
+      page. That was from bootstrap.
+    -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  </head>
+  <body>
+    <!--
+      * Reference citation exact same as one provided in index.html *
+    -->
+    <h1 class="title">what news?</h1>
+    <hr />
+    <h1 class="page-title">current events</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="news.html">News</a></li>
+        <li><a href="opinion.html">Opinion</a></li>
+        <li><a href="quizzes.html">Quizzes</a></li>
+      </ul>
+    </nav>
+    <br />
+    <!--
+      Referenced: https://www.w3schools.com/howto/howto_css_modals.asp ,
+      https://www.w3schools.com/howto/howto_js_scroll_indicator.asp
+        Used both sites to help structure and layout the scrolling, popup modal.
+        Used code provided to structure the layout of the scrolling, popup modal.
+        - Each div class col has the 'article' that I want to display. In css, I used
+        the class attribute '.col' to make sure that it would have 30% width, therefore
+        fitting three columns per row.
+        ** Functionality of buttons described in depth in news.js file
+        - I had two buttons, one to view the article, which would pop up when clicked.
+        The download button would download the contents of the article.
+        - The &times is the x sign, which allows user to close popup.
+        !** This is for all <div class=col> **!
+    -->
+    <div class="row">
+      <div class="col" id="col-1">
+        <img src="warcamps.jpeg" />
+        <h3>Persisting War Against Parshendi</h3>
+        <p>King Elohkar continues his revenge for his father, King Gavilar, who's death was at the hands of the Parshendi.</p>
+        <p style="font-size:12px;"><cite>Map of Alethi warcamps</cite> by Isaac Stewart in the Stormlight Archive by Brandon Sanderson.</p>
+        <p class="url">The image was found online at https://www.tor.com/2020/08/13/the-people-and-places-of-roshar/</p>
+        <button id="article-1">view article</button>
+        <button id="download-1">download article</button>
+        <div id="modal-1" class="modal">
+          <span id="close-1">&times;</span>
+          <div class="content-header">
+            <h2>Persisting War Against Parshendi</h2>
+            <p><em>scrolling enabled</em></p>
+            <div class="bar-divider"></div>
+          </div>
+          <div class="content-body">
+            <p id="text-1">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmodtempor incididunt ut labore et dolore magna aliqua. Etiam sit amet nislpurus in mollis nunc.
+              Condimentum mattis pellentesque id nibh tortor id.Erat pellentesque adipiscing commodo elit. Adipiscing vitae proin sagittis nisl.Nec tincidunt praesent semper feugiat
+              nibh sed pulvinar proingravida. Ut eu sem integer vitae justo. Est pellentesque elit ullamcorper dignissim cras tincidunt. Amet commodo nulla facilisi nullam vehicula ipsum a
+              arcu cursus. Enim praesent elementum facilisis leo vel fringilla est ullamcorper.Convallis posuere morbi leo urna molestie at elementum eu. Consectetur a erat nam at lectus.
+              Suspendisse ultrices gravida dictum fusce. Tellus molestie nunc non blandit massa. Semper feugiat nibh sed pulvinar proin gravida hendrerit lectus. Vitae ultricies leo integer
+              malesuada nunc. Cursus risus at ultrices mi tempus imperdiet nulla. Nisl vel pretium lectus quam id. A iaculis at erat pellentesque adipiscing commodo elit. Quam nulla porttitor
+              massa id neque aliquam vestibulum. Sit amet nulla facilisi morbi tempus iaculis urna id. In est ante in nibh mauris cursus mattis molestie a. Diam vulputate ut pharetra sit amet
+              aliquam id diam. Egestas tellus rutrum tellus pellentesque eu. Eget egestas purus viverra accumsan in. Netus et malesuada fames ac turpis egestas integer eget aliquet. Magna eget
+              est lorem ipsum dolor sit amet consectetur adipiscing. Feugiat in ante metus dictum at tempor. Imperdiet massa tincidunt nunc pulvinar sapien et. Etiam tempor orci eu lobortis
+              elementum nibh tellus molestie. Pulvinar pellentesque habitant morbi tristique senectus et netus et. Nisi lacus sed viverra tellus in hac habitasse. Elit sed vulputate mi sit amet mauris.
+              Tempus imperdiet nulla malesuada pellentesque elit eget gravida. Dictum fusce ut placerat orci nulla. Orci phasellus egestas tellus rutrum tellus pellentesque.
+
+              Morbi leo urna molestie at elementum eu facilisis. Molestie a iaculis at erat. At imperdiet dui accumsan sit amet nulla facilisi. Consectetur lorem donec massa sapien faucibus.
+              Eget nulla facilisi etiam dignissim diam. Blandit volutpat maecenas volutpat blandit. Semper risus in hendrerit gravida rutrum quisque. Blandit aliquam etiam erat velit scelerisque in
+              dictum non consectetur. Eget aliquet nibh praesent tristique magna sit amet purus. Odio ut sem nulla pharetra diam sit amet.
+
+              Consectetur adipiscing elit ut aliquam purus sit amet luctus. Vestibulum lorem sed risus ultricies. Vel pretium lectus quam id. A arcu cursus vitae congue. Quam id leo in vitae turpis.
+              Ornare quam viverra orci sagittis eu volutpat odio facilisis. Tincidunt augue interdum velit euismod in pellentesque massa placerat. Interdum velit laoreet id donec ultrices tincidunt
+              arcu non. Sollicitudin nibh sit amet commodo nulla. Vestibulum sed arcu non odio. Bibendum est ultricies integer quis auctor elit sed vulputate. Egestas egestas fringilla phasellus
+              faucibus scelerisque eleifend donec. Enim facilisis gravida neque convallis a cras semper auctor neque. Pellentesque habitant morbi tristique senectus. Nisl vel pretium lectus quam id
+              leo in vitae. Odio facilisis mauris sit amet massa vitae tortor condimentum. Massa tincidunt nunc pulvinar sapien et ligula ullamcorper. Justo laoreet sit amet cursus. A erat nam at lectus
+              urna duis. Consequat interdum varius sit amet mattis vulputate enim. Elementum nibh tellus molestie nunc non blandit massa enim.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col" id="col-2">
+        <img src="silver-kingdoms.jpeg" />
+        <h3>Is an Unified Roshar Possible Today?</h3>
+        <p>During the times of the Heralds, Roshar was unified.</p>
+        <p style="font-size:12px;"><cite>Map of the Silver Kingdoms</cite> by Isaac Stewart in the Stormlight Archive by Brandon Sanderson.</p>
+        <p class="url">The image was found online at https://www.tor.com/2020/08/13/the-people-and-places-of-roshar/</p>
+        <button id="article-2">view article</button>
+        <button id="download-2">download article</button>
+        <div id="modal-2" class="modal">
+          <span id="close-2">&times;</span>
+          <div class="content-header">
+            <h2>Is an Unified Roshar Possible Today?</h2>
+            <p><em>scrolling enabled</em></p>
+            <div class="bar-divider"></div>
+          </div>
+          <div class="content-body">
+            <p id="text-2">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmodtempor incididunt ut labore et dolore magna aliqua. Etiam sit amet nislpurus in mollis nunc.
+              Condimentum mattis pellentesque id nibh tortor id.Erat pellentesque adipiscing commodo elit. Adipiscing vitae proin sagittis nisl.Nec tincidunt praesent semper feugiat
+              nibh sed pulvinar proingravida. Ut eu sem integer vitae justo. Est pellentesque elit ullamcorper dignissim cras tincidunt. Amet commodo nulla facilisi nullam vehicula ipsum a
+              arcu cursus. Enim praesent elementum facilisis leo vel fringilla est ullamcorper.Convallis posuere morbi leo urna molestie at elementum eu. Consectetur a erat nam at lectus.
+              Suspendisse ultrices gravida dictum fusce. Tellus molestie nunc non blandit massa. Semper feugiat nibh sed pulvinar proin gravida hendrerit lectus. Vitae ultricies leo integer
+              malesuada nunc. Cursus risus at ultrices mi tempus imperdiet nulla. Nisl vel pretium lectus quam id. A iaculis at erat pellentesque adipiscing commodo elit. Quam nulla porttitor
+              massa id neque aliquam vestibulum. Sit amet nulla facilisi morbi tempus iaculis urna id. In est ante in nibh mauris cursus mattis molestie a. Diam vulputate ut pharetra sit amet
+              aliquam id diam. Egestas tellus rutrum tellus pellentesque eu. Eget egestas purus viverra accumsan in. Netus et malesuada fames ac turpis egestas integer eget aliquet. Magna eget
+              est lorem ipsum dolor sit amet consectetur adipiscing. Feugiat in ante metus dictum at tempor. Imperdiet massa tincidunt nunc pulvinar sapien et. Etiam tempor orci eu lobortis
+              elementum nibh tellus molestie. Pulvinar pellentesque habitant morbi tristique senectus et netus et. Nisi lacus sed viverra tellus in hac habitasse. Elit sed vulputate mi sit amet mauris.
+              Tempus imperdiet nulla malesuada pellentesque elit eget gravida. Dictum fusce ut placerat orci nulla. Orci phasellus egestas tellus rutrum tellus pellentesque.
+
+              Morbi leo urna molestie at elementum eu facilisis. Molestie a iaculis at erat. At imperdiet dui accumsan sit amet nulla facilisi. Consectetur lorem donec massa sapien faucibus.
+              Eget nulla facilisi etiam dignissim diam. Blandit volutpat maecenas volutpat blandit. Semper risus in hendrerit gravida rutrum quisque. Blandit aliquam etiam erat velit scelerisque in
+              dictum non consectetur. Eget aliquet nibh praesent tristique magna sit amet purus. Odio ut sem nulla pharetra diam sit amet.
+
+              Consectetur adipiscing elit ut aliquam purus sit amet luctus. Vestibulum lorem sed risus ultricies. Vel pretium lectus quam id. A arcu cursus vitae congue. Quam id leo in vitae turpis.
+              Ornare quam viverra orci sagittis eu volutpat odio facilisis. Tincidunt augue interdum velit euismod in pellentesque massa placerat. Interdum velit laoreet id donec ultrices tincidunt
+              arcu non. Sollicitudin nibh sit amet commodo nulla. Vestibulum sed arcu non odio. Bibendum est ultricies integer quis auctor elit sed vulputate. Egestas egestas fringilla phasellus
+              faucibus scelerisque eleifend donec. Enim facilisis gravida neque convallis a cras semper auctor neque. Pellentesque habitant morbi tristique senectus. Nisl vel pretium lectus quam id
+              leo in vitae. Odio facilisis mauris sit amet massa vitae tortor condimentum. Massa tincidunt nunc pulvinar sapien et ligula ullamcorper. Justo laoreet sit amet cursus. A erat nam at lectus
+              urna duis. Consequat interdum varius sit amet mattis vulputate enim. Elementum nibh tellus molestie nunc non blandit massa enim.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col" id="col-3">
+        <img src="szeth.jpeg" />
+        <h3>Will the Assasin in White Strike Again?</h3>
+        <p>The Assasin in White slayed King Gavilar that one night, standing one against so many.</p>
+        <p style="font-size:12px;"><cite>Szeth a Shin Truthless</cite> by Ben McSweeney in the Stormlight Archive by Brandon Sanderson.</p>
+        <p class="url">The image was found online at https://www.tor.com/2020/08/13/the-people-and-places-of-roshar/</p>
+        <button id="article-3">view article</button>
+        <button id="download-3">download article</button>
+        <div id="modal-3" class="modal">
+          <span id="close-3">&times;</span>
+          <div class="content-header">
+            <h2>Will the Assasin in White Strike Again?</h2>
+            <p><em>scrolling enabled</em></p>
+            <div class="bar-divider"></div>
+          </div>
+          <div class="content-body">
+            <p id="text-3">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmodtempor incididunt ut labore et dolore magna aliqua. Etiam sit amet nislpurus in mollis nunc.
+              Condimentum mattis pellentesque id nibh tortor id.Erat pellentesque adipiscing commodo elit. Adipiscing vitae proin sagittis nisl.Nec tincidunt praesent semper feugiat
+              nibh sed pulvinar proingravida. Ut eu sem integer vitae justo. Est pellentesque elit ullamcorper dignissim cras tincidunt. Amet commodo nulla facilisi nullam vehicula ipsum a
+              arcu cursus. Enim praesent elementum facilisis leo vel fringilla est ullamcorper.Convallis posuere morbi leo urna molestie at elementum eu. Consectetur a erat nam at lectus.
+              Suspendisse ultrices gravida dictum fusce. Tellus molestie nunc non blandit massa. Semper feugiat nibh sed pulvinar proin gravida hendrerit lectus. Vitae ultricies leo integer
+              malesuada nunc. Cursus risus at ultrices mi tempus imperdiet nulla. Nisl vel pretium lectus quam id. A iaculis at erat pellentesque adipiscing commodo elit. Quam nulla porttitor
+              massa id neque aliquam vestibulum. Sit amet nulla facilisi morbi tempus iaculis urna id. In est ante in nibh mauris cursus mattis molestie a. Diam vulputate ut pharetra sit amet
+              aliquam id diam. Egestas tellus rutrum tellus pellentesque eu. Eget egestas purus viverra accumsan in. Netus et malesuada fames ac turpis egestas integer eget aliquet. Magna eget
+              est lorem ipsum dolor sit amet consectetur adipiscing. Feugiat in ante metus dictum at tempor. Imperdiet massa tincidunt nunc pulvinar sapien et. Etiam tempor orci eu lobortis
+              elementum nibh tellus molestie. Pulvinar pellentesque habitant morbi tristique senectus et netus et. Nisi lacus sed viverra tellus in hac habitasse. Elit sed vulputate mi sit amet mauris.
+              Tempus imperdiet nulla malesuada pellentesque elit eget gravida. Dictum fusce ut placerat orci nulla. Orci phasellus egestas tellus rutrum tellus pellentesque.
+
+              Morbi leo urna molestie at elementum eu facilisis. Molestie a iaculis at erat. At imperdiet dui accumsan sit amet nulla facilisi. Consectetur lorem donec massa sapien faucibus.
+              Eget nulla facilisi etiam dignissim diam. Blandit volutpat maecenas volutpat blandit. Semper risus in hendrerit gravida rutrum quisque. Blandit aliquam etiam erat velit scelerisque in
+              dictum non consectetur. Eget aliquet nibh praesent tristique magna sit amet purus. Odio ut sem nulla pharetra diam sit amet.
+
+              Consectetur adipiscing elit ut aliquam purus sit amet luctus. Vestibulum lorem sed risus ultricies. Vel pretium lectus quam id. A arcu cursus vitae congue. Quam id leo in vitae turpis.
+              Ornare quam viverra orci sagittis eu volutpat odio facilisis. Tincidunt augue interdum velit euismod in pellentesque massa placerat. Interdum velit laoreet id donec ultrices tincidunt
+              arcu non. Sollicitudin nibh sit amet commodo nulla. Vestibulum sed arcu non odio. Bibendum est ultricies integer quis auctor elit sed vulputate. Egestas egestas fringilla phasellus
+              faucibus scelerisque eleifend donec. Enim facilisis gravida neque convallis a cras semper auctor neque. Pellentesque habitant morbi tristique senectus. Nisl vel pretium lectus quam id
+              leo in vitae. Odio facilisis mauris sit amet massa vitae tortor condimentum. Massa tincidunt nunc pulvinar sapien et ligula ullamcorper. Justo laoreet sit amet cursus. A erat nam at lectus
+              urna duis. Consequat interdum varius sit amet mattis vulputate enim. Elementum nibh tellus molestie nunc non blandit massa enim.
+            </p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+    <script src="news.js"></script>
+  </body>
+</html>

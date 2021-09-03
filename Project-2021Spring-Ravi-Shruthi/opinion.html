@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Opinion</title>
+    <link rel="stylesheet" href="opinion.css" type="text/css">
+    <!--
+      Decided to incorporate bootstrap into every page MAINLY for the way it incorporated
+      a specific font for the title (what news, and subpage titles), the line divider look,
+      and other stylistic aspects. I did not use it to ease up criteria listed (I made sure to
+      use html/css/javascript explicitly for all of that), EXCEPT for carousel on home
+      page. That was from bootstrap.
+    -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  </head>
+  <body>
+    <!--
+      * Reference citation exact same as one provided in index.html *
+    -->
+    <h1 class="title">what news?</h1>
+    <hr />
+    <h1 class="page-title">opinion of the week</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="news.html">News</a></li>
+        <li><a href="opinion.html">Opinion</a></li>
+        <li><a href="quizzes.html">Quizzes</a></li>
+      </ul>
+    </nav>
+
+    <!--
+      Referenced:
+      https://www.w3schools.com/howto/howto_js_hover_tabs.asp
+        Used to figure out how to create tab like feature to view different
+        content.
+        The ideas is pretty simple and the html is not what creates the tab like look.
+        That is done in opinion.css file.
+        I messed around with the css ALOT to get it exactly how it looks now.
+      https://www.freecodecamp.org/news/how-to-use-html-to-open-link-in-new-tab/
+        To figure out how to get link to open in new tab by adding target attribute.
+      https://www.w3schools.com/tags/tag_cite.asp
+        To figure out how to cite the images used on this subpage, using the <cite> tag.
+    -->
+    <div class="tab">
+      <button id="firstlink">Fashion</button>
+      <button id="secondlink">Travel</button>
+      <button id="thirdlink">Debate</button>
+    </div>
+
+    <div id="first" class="tabcontent">
+      <h2>Vorin Fashion</h2>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt</p><br />
+      <img id="img1" src="vorin-havah.jpeg" alt="Vorin Havah">
+      <h4>vorin havah</h4>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt</p>
+      <p><cite>Folio page of a Vorin havah</cite> by Dan Dos Santos, in the Stormlight Archive by Brandon Sanderson.</p>
+      <p class="url">The image was found online at https://www.tor.com/2020/08/13/the-people-and-places-of-roshar/</p>
+      <a href="https://www.tor.com/2020/08/13/the-people-and-places-of-roshar/" target="_blank"><b>Click here read more in the TOR webpage</b></a>
+      <div style="clear: both;"></div>
+      <img id="img2" src="male-fashion.jpeg" alt="Male Alethi Fashion">
+      <h4>male alethi fashion</h4>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt</p>
+      <p><cite>Folio page of contemporary Veden and Alethi male fashion</cite> by Dan Dos Santos, in the Stormlight Archive by Brandon Sanderson.</p>
+      <p class="url">The image was found online at https://www.tor.com/2020/08/13/the-people-and-places-of-roshar/</p>
+      <a href="https://www.tor.com/2020/08/13/the-people-and-places-of-roshar/" target="_blank"><b>Click here read more in the TOR webpage</b></a>
+    </div>
+
+    <div id="second" class="tabcontent">
+      <h2>Travel Location of the Week: Kharbranth</h2>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor</p><br />
+      <img id="img3" src="kharbranth.jpeg" alt="Kharbranth">
+      <p><cite>Sketch of Kharbranth</cite> by Isaac Stewart, in the Stormlight Archive by Brandon Sanderson.</p>
+      <p class="url">The image was found online at https://www.tor.com/2020/08/13/the-people-and-places-of-roshar/</p>
+      <br />
+      <h4>Why and what to do in Kharbranth</h4>
+      <ul>
+        <li>Hear the Bells within the Conclave</li>
+        <li>Visit the Palanaeum</li>
+        <li>Tour the Kharbranthian Hospitals</li>
+        <li>Ride the rickshaws, through the crowds, through the entire city</li>
+        <li>View, firsthand, the bright structures of the city</li>
+      </ul>
+    </div>
+    <div id="third" class="tabcontent">
+      <h2>Firemoss - banned or legalized?</h2>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.<br />
+        Etiam sit amet nisl purus in mollis nunc. Condimentum mattis pellentesque id nibh tortor id. Erat pellentesque adipiscing commodo elit.<br />
+        Adipiscing vitae proin sagittis nisl. Nec tincidunt praesent semper feugiat nibh sed pulvinar proin gravida. Ut eu sem integer vitae justo.<br />
+        Est pellentesque elit ullamcorper dignissim cras tincidunt. Amet commodo nulla facilisi nullam vehicula ipsum a arcu cursus. Enim praesent <br />
+        elementum facilisis leo vel fringilla est ullamcorper. Convallis posuere morbi leo urna molestie at elementum eu. Consectetur a erat nam at lectus. <br />
+        Suspendisse ultrices gravida dictum fusce. Tellus molestie nunc non blandit massa. Semper feugiat nibh sed pulvinar proin gravida hendrerit lectus. <br />
+        Vitae ultricies leo integer malesuada nunc. Cursus risus at ultrices mi tempus imperdiet nulla. Nisl vel pretium lectus quam id. A iaculis at erat <br />
+        pellentesque adipiscing commodo elit. Quam nulla porttitor massa id neque aliquam vestibulum.
+      </p>
+    </div>
+
+    <script src="opinion.js"></script>
+  </body>
+</html>
